@@ -1,0 +1,30 @@
+.cart-icon-container {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: translateY(-10px);
+
+  .shopping-icon {
+    width: 34px;
+    height: 34px;
+    @media only screen and (max-width: 768px) {
+      width:28px;
+      height: 28px;
+    }
+  }
+
+  .item-count {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 6px;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+      bottom: 10px;
+    }
+  }
+}

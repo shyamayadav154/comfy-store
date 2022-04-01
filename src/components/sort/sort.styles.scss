@@ -1,0 +1,16 @@
+.sort{
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    select{
+       padding: 5px;
+       margin: 10px;
+       margin-right: 0;
+       margin-top: 0;
+        font-size: 1.05rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-transform: capitalize;
+    }
+}

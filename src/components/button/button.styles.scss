@@ -1,0 +1,36 @@
+
+
+.btn{
+    cursor: pointer;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #ab7a5f;
+    color: #fff;
+    transition: 0.3s;
+    &.inverted{
+        border:1px solid #666;
+        background-color: #fff;
+        color: #666;
+    }
+
+    &.google-sign-in{
+        background-color: #4285F4;
+        color: white;
+    }
+
+    &.shop{
+        background-color: grey;
+        color: white;
+    }
+    &:hover{
+      background: #cdaf9f;  
+      color: #221813;
+    }
+    &:disabled{
+        opacity: 0.5;
+    }
+  
+}
+
