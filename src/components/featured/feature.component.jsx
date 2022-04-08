@@ -12,7 +12,7 @@ const Feature = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const { products } = useSelector((state) => state.products)
-  console.log(products)
+ 
 
   useEffect(() => {
     dispatch(fetchProducts(url))

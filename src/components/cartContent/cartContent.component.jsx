@@ -7,7 +7,7 @@ import { addToCart,removeFromCart,clearFromCart } from '../../store/modules/cart
 import { useDispatch } from 'react-redux'
 
 const CartContent = ({cartItem}) => {
-    console.log(cartItem);
+   
     const dispatch = useDispatch()
     
     const { name, images, price, quantity } = cartItem

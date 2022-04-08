@@ -68,7 +68,7 @@ export function fetchProducts(url) {
 
 
 export const fetchSingleProduct = (url) => {
-  console.log(url);
+
   return async (dispatch) => {
        dispatch({ type: GET_SINGLE_PRODUCT_BEGIN })
 

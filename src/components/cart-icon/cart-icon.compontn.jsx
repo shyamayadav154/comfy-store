@@ -5,7 +5,7 @@ import ShoppingIcon from '../../assets/shopping-bag-svgrepo-com.svg'
 import { useSelector } from 'react-redux'
 const CartIcon = () => {
     const {total_items,isCartOpen}= useSelector(state=>state.cart)
-    console.log(total_items);
+   
 
   return (
     <div className='cart-icon-container'>

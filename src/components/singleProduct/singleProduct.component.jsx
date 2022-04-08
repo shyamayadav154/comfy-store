@@ -24,7 +24,7 @@ const SingleProduct = () => {
   const checkInCart = cartProducts.find(product=>product.id === id)?true:false
   
 
-  console.log(checkInCart);
+
 
   useEffect(() => {
     dispatch(fetchSingleProduct(`${url}${id}`))
@@ -49,7 +49,7 @@ const SingleProduct = () => {
     images,
   } = product
 
-  console.log(stock);
+
 
   return (
     <motion.div

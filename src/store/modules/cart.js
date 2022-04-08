@@ -62,7 +62,7 @@ export default (state = initialState, { type, payload }) => {
 
 
     case CART_TOTAL:{
-        console.log('in total');
+       
         const {total_items,total_amount} = state.cartProducts.reduce((total,cartItem)=>{
             const {quantity,price} = cartItem
             
@@ -70,7 +70,7 @@ export default (state = initialState, { type, payload }) => {
             total.total_amount += price*quantity;
             return total
         },{total_items:0,total_amount:0})
-        console.log(total_items,total_amount);
+        
         return {...state,total_items,total_amount}
     }
 

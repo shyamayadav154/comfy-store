@@ -30,7 +30,7 @@ const Filter = () => {
   } = filters
 
   const data = useSelector((state) => state.filters)
-  console.log(data)
+
 
 useEffect(()=>{
  
