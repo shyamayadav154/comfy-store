@@ -11,12 +11,14 @@ const url = 'https://course-api.com/react-store-products'
 const Feature = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  const { products } = useSelector((state) => state.products)
+  const { products, loading } = useSelector((state) => state.products)
  
 
   useEffect(() => {
     dispatch(fetchProducts(url))
   }, [])
+
+    if (loading) return <div className='loading'></div>
 
   return (
     <section className='feature'>
