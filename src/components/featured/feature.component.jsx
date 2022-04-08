@@ -3,8 +3,8 @@ import './feature.styles.scss'
 import { fetchProducts } from '../../store/modules/products'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import ProductCard from '../productCard/productCard.component'
-import Button from '../button/button.componet'
+import ProductCard from '../productCard/productCard.component.jsx'
+import Button from '../button/button.componet.jsx'
 
 const url = 'https://course-api.com/react-store-products'
 

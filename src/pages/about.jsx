@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import BreadScrum from '../components/breadCrumbs/breadCrumbs.component'
+import BreadScrum from '../components/breadCrumbs/breadCrumbs.component.jsx'
 import { motion } from 'framer-motion'
 
 

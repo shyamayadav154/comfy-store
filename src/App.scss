@@ -3,6 +3,9 @@
 .app{
     position: relative;
     margin-top: 5.4rem;
+    @media only screen and (max-width: 768px) {
+        margin-top: 4.5rem;
+    }
    min-height: 100vh;
    padding-bottom: 6rem;
 }

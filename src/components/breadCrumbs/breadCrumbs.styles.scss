@@ -1,4 +1,8 @@
 .breadScrumbs {
+
+  @media only screen and (max-width: 768px) {
+   min-height: 9vh;
+  }
   background: #eaded7;
   width: 100%;
   min-height: 15vh;

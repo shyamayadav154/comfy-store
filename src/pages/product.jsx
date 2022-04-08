@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { fetchProducts } from '../store/modules/products.js'
 import { useSelector, useDispatch } from 'react-redux'
-import ProductCard from '../components/productCard/productCard.component'
+import ProductCard from '../components/productCard/productCard.component.jsx'
 import styled from 'styled-components'
 import Sort from '../components/sort/sort.compoent.jsx'
 import { useNavigate } from 'react-router-dom'
@@ -27,6 +27,8 @@ const Products = () => {
 
       dispatch(fetchProducts(url))
     }
+
+    window.scroll(0,0)
   }, [])
 
   if (loading) return <div className='loading'></div>

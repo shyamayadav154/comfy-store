@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import Button from '../button/button.componet'
-import FormInput from '../form-input/form-input.component'
+import Button from '../button/button.componet.jsx'
+import FormInput from '../form-input/form-input.component.jsx'
 import './signIn.styles.scss'
 
 const defaultFormFields = {

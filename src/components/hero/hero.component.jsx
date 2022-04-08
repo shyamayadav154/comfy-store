@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../button/button.componet'
+import Button from '../button/button.componet.jsx'
 import './hero.styles.scss'
 import { useNavigate } from 'react-router-dom'
 

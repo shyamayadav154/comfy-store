@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import CartContent from '../components/cartContent/cartContent.component'
+import CartContent from '../components/cartContent/cartContent.component.jsx'
 
 import { cartTotal } from '../store/modules/cart'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
-import BreadScrum from '../components/breadCrumbs/breadCrumbs.component'
+import BreadScrum from '../components/breadCrumbs/breadCrumbs.component.jsx'
 import { formatPrice } from '../utils/utils'
 
 const Cart = () => {

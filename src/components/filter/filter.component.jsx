@@ -10,7 +10,7 @@ import {
 } from '../../store/modules/filter'
 import {FaCheck} from 'react-icons/fa'
 import { formatPrice } from '../../utils/utils'
-import Button from '../button/button.componet'
+import Button from '../button/button.componet.jsx'
 import { fetchProducts } from '../../store/modules/products'
 
 const Filter = () => {

@@ -37,16 +37,16 @@ padding: 1rem;
     background: transparent;
     border: none;
     border-bottom: 1px solid transparent;
-    letter-spacing: var(--spacing);
-    color: var(--clr-grey-5);
+    letter-spacing: 0.1rem;
+    color: hsl(210, 22%, 49%);
     cursor: pointer;
   }
   .active {
-    border-color: var(--clr-grey-5);
+    border-color: hsl(210, 22%, 49%);
   }
   .company {
-    background: var(--clr-grey-10);
-    border-radius: var(--radius);
+    background: hsl(210, 36%, 96%);
+    border-radius: 0.25rem;
     border-color: transparent;
     padding: 0.25rem;
   }

@@ -1,7 +1,7 @@
 import React from 'react'
-import Contact from '../components/contact/contact.component'
-import Feature from '../components/featured/feature.component'
-import Hero from '../components/hero/hero.component'
+import Contact from '../components/contact/contact.component.jsx'
+import Feature from '../components/featured/feature.component.jsx'
+import Hero from '../components/hero/hero.component.jsx'
 import { motion } from 'framer-motion'
 const Home = () => {
   return (

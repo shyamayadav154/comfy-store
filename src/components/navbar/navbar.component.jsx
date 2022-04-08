@@ -2,10 +2,11 @@ import React from 'react'
 import './navbar.styles.scss'
 
 import { useNavigate, NavLink } from 'react-router-dom'
-import CartIcon from '../cart-icon/cart-icon.compontn'
+import CartIcon from '../cart-icon/cart-icon.compontn.jsx'
 
 const Navbar = () => {
   const navigate = useNavigate()
+  
   return (
     <nav>
       <div className='nav-container'>
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className='links'>
           <ul>
             <li>
-              <NavLink to='/products'>products</NavLink>
+              <NavLink to='/products'>shop</NavLink>
             </li>
 
             <li>

@@ -1,7 +1,7 @@
 import React from 'react'
-import SignIn from '../components/signIn/signIn.component'
+import SignIn from '../components/signIn/signIn.component.jsx'
 import styled from 'styled-components'
-import SignUp from '../components/sign-up-form/signupForm.component'
+import SignUp from '../components/sign-up-form/signupForm.component.jsx'
 import { motion } from 'framer-motion'
 
 const Authentication = () => {
