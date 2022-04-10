@@ -12,7 +12,7 @@ import Footer from './components/footer/footer.component.jsx'
 import Authentication from './pages/Authentication.jsx'
 import { AnimatePresence } from 'framer-motion'
 import { useLocation } from 'react-router-dom'
-
+import { Helmet } from 'react-helmet'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -20,20 +20,25 @@ function App() {
 
   return (
     <div className='app'>
-       
-          <Navbar />
+
+      <Helmet>
+        <link rel="icon" type="image/x-icon" href="../public/favicon.ico"></link>
+        
+      </Helmet>
+
+      <Navbar />
 
       <AnimatePresence exitBeforeEnter initial={false}>
-          <Routes location={location} key={location.pathname}>
-            <Route exact path='/' element={<Home />} />
-            <Route path='/products' element={<Products />} />
-            <Route path='/products/:id' element={<SingleProduct />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/sign-in' element={<Authentication />} />
-          </Routes>
+        <Routes location={location} key={location.pathname}>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/products/:id' element={<SingleProduct />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/sign-in' element={<Authentication />} />
+        </Routes>
       </AnimatePresence>
-      
+
       <Footer />
     </div>
   )
