@@ -3,12 +3,13 @@
 ## Overview
 An e-commerce website for furniture. It demonstrates features such as a shopping cart, payment, and delivery.
 
-Live Version: [Comfy Store](https://comfy-store-v1.netlify.app/)
 
 ### Features
 * Search,Sort & Filter Product Functionality
 *  Add To Cart Functionality
 *  Attractive UI/UX
+
+Live Version: [Comfy Store](https://comfy-store-v1.netlify.app/)
 
 ## Running this project locally
 Live Version: [Comfy Store](https://comfy-store-v1.netlify.app/)
