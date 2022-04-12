@@ -13,8 +13,8 @@ Live Version: [Comfy Store](https://comfy-store-v1.netlify.app/)
 
 
 ![feature 1](/src/assets/comfy-1.gif)
-![feature 2](/src/assets/comfy-2.gif)
 ![feature 3](/src/assets/comfy-3.gif)
+![feature 2](/src/assets/comfy-2.gif)
 
 
 
