@@ -12,13 +12,17 @@ An e-commerce website for furniture. It demonstrates features such as a shopping
 
 Live Version: [Comfy Store](https://comfy-store-v1.netlify.app/)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 66be68613f5df9fafecf447665eacf3f41bb2f32
 ![feature 1](/src/assets/comfy-1.gif)
 
 ![feature 3](/src/assets/comfy-3.gif)
 
 ![feature 2](/src/assets/comfy-2.gif)
 
-![feature 2](/src/assets/comfy-4.gif)
+![feature 4](/src/assets/comfy-4.gif)
 
 ## Running this project locally
 
@@ -32,6 +36,7 @@ From the repo:
 
 ## Tech Stack
 
+<<<<<<< HEAD
 - React
 - Redux
 - SASS
@@ -41,3 +46,14 @@ From the repo:
 - Firebase
 - Babel
 - Webpack
+=======
+ * React
+ * Redux
+ * SASS
+ * Axios
+ * Chart Js
+ * Material UI
+ * Firebase
+ * Babel 
+ * Webpack
+>>>>>>> 66be68613f5df9fafecf447665eacf3f41bb2f32
