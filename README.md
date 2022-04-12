@@ -12,10 +12,6 @@ An e-commerce website for furniture. It demonstrates features such as a shopping
 
 Live Version: [Comfy Store](https://comfy-store-v1.netlify.app/)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 66be68613f5df9fafecf447665eacf3f41bb2f32
 ![feature 1](/src/assets/comfy-1.gif)
 
 ![feature 3](/src/assets/comfy-3.gif)
