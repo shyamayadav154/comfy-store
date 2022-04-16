@@ -31,18 +31,6 @@ From the repo:
 3. Run npm start in your bash / command line
 
 ## Tech Stack
-
-<<<<<<< HEAD
-- React
-- Redux
-- SASS
-- Axios
-- Chart Js
-- Material UI
-- Firebase
-- Babel
-- Webpack
-=======
  * React
  * Redux
  * SASS
@@ -52,4 +40,4 @@ From the repo:
  * Firebase
  * Babel 
  * Webpack
->>>>>>> 66be68613f5df9fafecf447665eacf3f41bb2f32
+
