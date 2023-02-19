@@ -13,7 +13,6 @@ import Authentication from './pages/Authentication.jsx'
 import { AnimatePresence } from 'framer-motion'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   const location = useLocation()

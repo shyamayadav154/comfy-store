@@ -9,6 +9,7 @@ An e-commerce website for furniture. It demonstrates features such as a shopping
 - Search,Sort & Filter Product Functionality
 - Add To Cart Functionality
 - Attractive UI/UX
+- Login and Sign Up
 
 Live Version: [Comfy Store](https://comfy-store-v1.netlify.app/)
 

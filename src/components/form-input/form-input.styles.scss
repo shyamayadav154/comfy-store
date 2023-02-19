@@ -11,7 +11,7 @@
   .form-input {
     background: none;
     background-color: #fff;
-    color: grey;
+    color: #102a42;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -36,11 +36,11 @@
     .form-input-label{
         color: grey;
         font-size: 16px;
-        font-weight: normal;
+        font-weight: 500;
         position: absolute;
         pointer-events: none;
         left: 5px;
-        top: 10px;
+        top: 15px;
         transition:  300ms ease all;
 
         &.shrink{

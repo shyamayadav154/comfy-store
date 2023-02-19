@@ -1,4 +1,8 @@
+import { signInWithEmailAndPassword } from 'firebase/auth'
 import React,{useState} from 'react'
+import { useNavigate } from 'react-router-dom'
+import { auth } from '../../service/firebaseService.js'
+import { useAuthStore } from '../../store/modules/appState.js'
 import Button from '../button/button.componet.jsx'
 import FormInput from '../form-input/form-input.component.jsx'
 import './signIn.styles.scss'
@@ -13,13 +17,23 @@ const SignIn = () => {
 
     const [formFields,setFormFields] = useState(defaultFormFields)
     const {email,password} = formFields
-    
+    const setUser = useAuthStore(state=>state.setUser)
+    let navigate = useNavigate()
 
-    const handleChange = () =>{
-
+    const handleChange = (e) =>{
+      const {name,value} = e.target
+      setFormFields({...formFields,[name]:value})
     }
-    const handleSubmit=()=>{
-
+    const handleSubmit=async(e)=>{
+        e.preventDefault()
+        try {
+          const result = await signInWithEmailAndPassword(auth, email, password);
+          alert("User signed in successfully:" );
+          setUser(result.user)
+          navigate('/products')
+        } catch (error) {
+            alert(error.message)
+        }
     }
     const signInWithGoogle= () =>{
         

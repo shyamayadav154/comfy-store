@@ -1,33 +1,35 @@
-import React from 'react'
-import './navbar.styles.scss'
+import React from "react";
+import "./navbar.styles.scss";
 
-import { useNavigate, NavLink } from 'react-router-dom'
-import CartIcon from '../cart-icon/cart-icon.compontn.jsx'
+import { useNavigate, NavLink } from "react-router-dom";
+import CartIcon from "../cart-icon/cart-icon.compontn.jsx";
+import { useAuthStore } from "../../store/modules/appState";
 
 const Navbar = () => {
-  const navigate = useNavigate()
-  
+  const navigate = useNavigate();
+  const user = useAuthStore((state) => state.user);
+
   return (
     <nav>
-      <div className='nav-container'>
-        <div onClick={() => navigate('/')} className='brand'>
+      <div className="nav-container">
+        <div onClick={() => navigate("/")} className="brand">
           COMFY
         </div>
 
-        <div className='links'>
+        <div className="links">
           <ul>
             <li>
-              <NavLink to='/products'>shop</NavLink>
+              <NavLink to="/products">shop</NavLink>
             </li>
 
             <li>
-              <NavLink to='/about'>about</NavLink>
+              <NavLink to="/about">about</NavLink>
             </li>
             <li>
-              <NavLink to='/sign-in'>sign in</NavLink>
+              {user ? <LogoutBtn/> : <NavLink to="/sign-in">sign in</NavLink>}
             </li>
             <li>
-              <NavLink to='/cart'>
+              <NavLink to="/cart">
                 <CartIcon />
               </NavLink>
             </li>
@@ -35,7 +37,16 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+  );
+};
+
+const LogoutBtn = () => {
+  const setUser = useAuthStore(state=>state.setUser)
+  return (
+    <button className="btn" onClick={()=>setUser(null)}>
+      Logout
+    </button>
   )
 }
 
-export default Navbar
+export default Navbar;
